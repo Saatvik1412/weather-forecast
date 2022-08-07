@@ -8,7 +8,7 @@ async function setWeather(latitude, longitude){
         // let request = "api.openweathermap.org/data/2.5/forecast/daily?lat="+latitude+"&lon="+longitude+"&appid=59af7b8b7dd66b0e4011dc66c1c29214"
         // let request = "api.openweathermap.org/data/2.5/forecast/daily?lat=88&lon=22&appid=6b4bfdf05d0816386e630c28378a9c3b"
 
-        let request =   "http://api.weatherapi.com/v1/current.json?q="+latitude+","+longitude+"&key=ac07107c937c4f8388f92519222207"
+        let request =   "https://api.weatherapi.com/v1/current.json?q="+latitude+","+longitude+"&key=ac07107c937c4f8388f92519222207"
         let weatherData = await (await fetch(request)).json()
         console.log(weatherData)
         document.getElementById("temp").innerText = weatherData.current.temp_c
