@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-flow: column;
+    background-color: royalblue;
+    font-size: 30px;
+    color: white;
+}
+.grid-container{
+    text-align: center;
+}
+.search-box{
+    margin-top:100px;
+}
+.location{
+    padding-top:50px;
+}
+.date{
+    padding-top:50px;
+}
+.ye{
+    padding-top:50px;
+}
+.ye2{
+    padding-top: 50px;
+}
+input{
+    flex-basis: 100px;
+    padding: 10px;
+    font-size: 20px;
+}

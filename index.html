@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="grid-container">
+      <input type="text" autocomplete="on" class="search-box" id="place" placeholder="Search for a city..." />
+
+      <div class="location">
+        <!-- <div id="city">Kolkata</div> -->
+        <div class="date">23rd July</div>
+      </div>
+
+      <div class="current">
+        <div class="ye"><span id="temp"></span>°c</div>
+        <div class="ye2" ><span id="weather"></span></div>
+        <button onclick="getLocation()">Get Weather</button>
+      </div>
+  </div>
+  <script src="./weather.js"></script>
+</body>
+</html>
