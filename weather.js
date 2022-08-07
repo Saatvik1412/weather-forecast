@@ -22,7 +22,7 @@ async function setWeather(latitude, longitude){
 async function getLocation(){
     try{
     let place = document.getElementById("place").value
-    let request = "http://api.openweathermap.org/geo/1.0/direct?q="+place+"&appid=59af7b8b7dd66b0e4011dc66c1c29214"
+    let request = "https://api.openweathermap.org/geo/1.0/direct?q="+place+"&appid=59af7b8b7dd66b0e4011dc66c1c29214"
     let location = await (await fetch (request)).json()
     
     let latitude = location[0].lat
